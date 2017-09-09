@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  transfers.api:
+    image: transfers.api
+    build:
+      context: ./src/Services/Transfers/Transfers.API
+      dockerfile: Dockerfile
+
+  purchases.api:
+    image: purchases.api
+    build:
+      context: ./src/Services/Purchases/Purchases.API
+      dockerfile: Dockerfile
